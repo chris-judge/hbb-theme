@@ -1,0 +1,203 @@
+.page-guides-captains
+	.main, .intro
+		.row
+			max-width: 145rem
+			margin: auto
+	.main
+		padding-top: 0
+
+	.select-search
+		padding: 5rem 1.5rem 7rem
+	.select-wrap
+		max-width: 60rem
+		position: relative
+		svg
+			position: absolute
+			top: 0
+			right: 0
+			width: 5.9rem
+			height: auto
+			padding: 1.5rem 2rem
+			pointer-events: none
+	form
+		appearance: none
+		position: relative
+		max-width: 48rem
+		margin: auto 0 auto auto
+	input[type="search"]
+		background-color: white
+		border: 0.1rem solid $black
+		appearance: none
+		width: 100%
+		padding: 1.7rem 5.5rem 1.7rem 1.8rem
+		text-transform: uppercase
+		color: $black
+		text-transform: $neutra
+		font-weight: 300
+		letter-spacing: 0.11em
+		text-transform: uppercase
+		&:focus
+			outline: 0
+			&::-webkit-input-placeholder
+				color: transparent
+			&::-moz-placeholder
+				color: transparent
+			&:-ms-input-placeholder
+				color: transparent
+			&:-moz-placeholder
+				color: transparent
+
+		&::-webkit-input-placeholder
+			color: $black
+		&::-moz-placeholder
+			color: $black
+		&:-ms-input-placeholder
+			color: $black
+		&:-moz-placeholder
+			color: $black
+	input[type="submit"]
+		position: absolute
+		right: 0
+	select
+		appearance: none
+		border: 0.1rem solid $black
+		background-color: white
+		width: 100%
+		font-size: 2.4rem
+		font-weight: 600
+		text-transform: uppercase
+		font-family: $neutra
+		padding: 1.6rem 5rem 1.3rem 2.5rem
+		border-radius: 0
+		line-height: 1em
+		letter-spacing: 0.11em
+		cursor: pointer
+		&:focus
+			outline: 0
+	select::ms-expand
+		display: none
+
+	button
+		appearance: none
+		background-color: transparent
+		border: none
+		position: absolute
+		font-size: 2.4rem
+		top: 0
+		right: 0
+		border-radius: 0
+		padding: 1.5rem 2rem
+		transition: $short
+		color: $black
+		&:hover
+			color: $teal
+	
+	.main 
+		h2
+			margin-bottom: 0
+		.loc-auth
+			margin-bottom: 0
+			padding-top: 1.2rem
+			padding-bottom: 0.8rem
+		.inner-wrap
+			max-width: 36rem
+		p
+			padding-bottom: 0.5rem
+		p.loc
+			padding: 0 3rem 0.8rem
+		.social
+			padding-top: 0.8rem
+			font-size: 2rem
+			a
+				margin: auto
+				padding: 0 1rem
+
+
+	.main .bg:hover
+		opacity: 1
+
+
+@media screen and (max-width: 1280px)
+	.page-guides-captains .select-wrap
+		max-width: 40rem
+	.page-guides-captains form
+		max-width: 40rem
+	.page-guides-captains select
+		font-size: 1.6rem
+		padding: 1.7rem 3.5rem 1.4rem 1.5rem
+	.page-guides-captains .select-wrap svg
+		width: 3.3rem
+		padding: 1.5rem 1rem
+
+	.page-guides-captains input[type=search]
+		font-size: 1.6rem
+		padding: 1.5rem 5.5rem 1.5rem 1.8rem
+
+	.page-guides-captains button
+		padding: 1.25rem 1.5rem
+
+
+
+@media screen and (max-width: 1220px)
+	.page-guides-captains .main li
+		flex: 0 0 calc(100%/2)
+		max-width: calc(100%/2)
+		width: 100%
+
+@media screen and (max-width: 990px)
+	.page-guides-captains .select-wrap, .page-guides-captains form
+		margin: auto
+	.page-guides-captains .select-wrap
+		margin-bottom: 3rem
+
+@media screen and (max-width: 750px)
+	.page-guides-captains .main li
+		flex: 0 0 100%
+		max-width: 100%
+		width: 100%
+	
+	.page-guides-captains .main .alm-reveal
+		display: block
+		li
+			display: block
+			max-width: 40rem
+			margin: auto auto 2.5rem
+
+	.page-guides-captains .select-wrap, .page-guides-captains form
+		max-width: 100%
+
+	.page-guides-captains .select-search
+		padding: 3rem 0rem 4rem
+
+	.page-guides-captains .main .inner-wrap
+		padding: 4rem .5rem 1rem
+
+@media screen and (max-width: 500px)
+	.page-guides-captains select, .page-guides-captains input[type=search]
+		font-size: 1.4rem
+	.page-guides-captains button
+		font-size: 2rem
+
+	.page-guides-captains .select-wrap
+		margin-bottom: 2rem
+
+	.page-guides-captains .main .alm-reveal li
+		padding: 1.5rem 0
+
+@media screen and (max-width: 400px)
+	.page-guides-captains .main .bg
+		height: 25rem
+
+	.page-guides-captains input[type=search]
+		padding: 1rem 4.5rem 1rem 1rem
+
+	.page-guides-captains button
+		font-size: 1.5rem
+		padding: 1.2rem 1.5rem
+
+	.page-guides-captains select
+		padding: 1.2rem 3.5rem 1rem 1rem
+
+	.page-guides-captains .select-wrap svg
+		padding: 1rem
+		width: 3.3rem

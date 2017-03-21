@@ -1,0 +1,183 @@
+.page-videos
+	h1
+		margin-bottom: 1.4rem
+	.tagline
+		font-family: $neutra
+		font-size: 1.6rem
+		font-weight: 600
+		text-transform: uppercase
+		letter-spacing: 0.11em
+		transition: $short
+	.skiff
+		margin-bottom: 3.2rem
+		&:hover
+			.tagline
+				opacity: 0
+
+
+
+
+.page-video
+	padding-bottom: 9rem
+	.intro
+		padding-top: 12rem
+		margin-bottom: 7rem
+	.logo-wrap
+		img
+			max-width: 100%
+			height: auto
+	.ce-wrap
+		padding-top: 2rem
+		padding-bottom: 2rem 
+		max-width: 61rem
+		margin: auto
+
+	.seasons-nav
+		margin-bottom: 9rem
+		li
+			font-weight: 600
+			display: inline-block
+			margin: auto 1.5rem
+			font-family: $neutra
+			letter-spacing: 0.11em
+			cursor: pointer
+			transition: $short
+			font-size: 1.8rem
+			position: relative
+			&:hover
+				color: $teal
+
+		li.active
+			pointer-events: none
+			color: $grey
+			&:before
+				content: ''
+				background-image: url('../img/anchor.svg')
+				background-size: 100%
+				background-position: center
+				background-repeat: no-repeat
+				position: absolute
+				bottom: calc(100% + 1rem)
+				left: 0
+				right: 0
+				height: 2.5rem
+				width: 2rem
+				margin: auto
+
+
+		.col-md-12
+			position: relative
+
+	.loader
+		position: absolute
+		top: 250%
+		left: 0
+		right: 0
+		opacity: 0
+		transition: $short
+	.loader.active
+		opacity: 1
+
+	.videos-wrap
+		position: relative
+		overflow: hidden
+
+	.season
+		position: absolute
+		opacity: 0
+		pointer-events: none
+		transition: 0s
+		z-index: 35
+		background-color: white
+		left: 0
+		right: 0
+		top: 0
+		.row-wrap
+			max-width: 147.5rem
+			margin: auto
+		.row-wrap
+			display: flex
+			justify-content: flex-start
+			align-items: flex-start
+			flex-wrap: 	wrap
+		.vid
+			flex: 0 0 50%
+			max-width: 50%
+			padding-left: 1.5rem
+			padding-right: 1.5rem
+			width: 100%
+		.bg
+			width: 100%
+			height: 62rem
+			position: relative
+			margin-bottom: 4.5rem
+		.overlay
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			z-index: 45
+			opacity: 0
+			background-color: $black
+			transition: $short
+		.lb-item
+			margin-bottom: 13rem
+			display: block
+		.lb-item svg
+			z-index: 50
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			margin: auto
+		.lb-item svg path
+			transition: $short
+		.lb-item:hover 
+			.overlay
+				opacity: 0.46
+			svg path
+				fill: $teal
+			h2
+				color: $teal
+
+		.title
+			padding: 0 6rem
+		h2
+			line-height: 1.5em
+
+	.season.active
+		position: static
+		opacity: 1
+		pointer-events: auto
+		z-index: 40
+		left: 0
+		right: 0
+		transition: $long
+
+@media screen and (max-width: 1600px)
+	.page-video .season .bg
+		height: 40rem
+	.page-video .season .row-wrap
+		max-width: 99.5rem
+	.page-video .season a
+		margin-bottom: 8rem
+
+@media screen and (max-width: 990px)
+	.page-video .episodes .vid
+		max-width: 100%
+		flex: 0 0 100%
+	.page-video .seasons-nav li.active:before
+		display: none
+	.page-video .seasons-nav li
+		margin-bottom: 1rem
+	.page-video .seasons-nav
+		margin-bottom: 5rem
+
+	.page-video .intro
+		padding-top: 8rem
+		margin-bottom: 6rem
+
+	.page-video
+		padding-bottom: 4rem

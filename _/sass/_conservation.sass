@@ -1,0 +1,156 @@
+.page-conservation
+	max-width: 145rem
+	margin: auto
+	.main
+		padding-top: 12rem
+		padding-bottom: 18rem
+		h2
+			font-size: 2.2rem
+			margin-bottom: 1.2em
+		.row
+			max-width: 130rem
+			margin: auto
+		.col-md-4
+			padding-right: 0
+		.col-md-8
+			position: relative
+		.logo
+			position: absolute
+			left: 9.5rem
+			top: 0
+		.ce-wrap
+			img
+				width: 100%
+	.conserv-menu
+		li
+			font-family: $neutra
+			letter-spacing: 0.11em
+			font-size: 1.8rem
+			text-transform: uppercase
+			color: $grey
+			margin-bottom: 2em
+			font-weight: 600
+			cursor: pointer
+			transition: $short
+			position: relative
+			&:hover, &:focus
+				color: $black
+			&:last-of-type
+				margin-bottom: 0
+				
+		li.active
+			color: $black
+			pointer-events: none
+			.anchor
+				opacity: 1
+
+		.anchor
+			position: absolute
+			left: calc(100% + 1rem)
+			top: 50%
+			z-index: 70
+			display: block
+			transform: translateY(-50%)
+			opacity: 0
+			transition: $short
+			svg
+				width: 2rem
+				height: auto
+				polygon, path
+					fill: $black
+
+
+	.conserv-info
+		padding-left: 24.5rem
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		opacity: 0
+		transition: 0s
+		pointer-events: none
+		z-index: 30
+		background-color: white
+		height: 0
+		overflow: hidden
+		.ce-wrap
+			img
+				margin-bottom: 3rem
+	.conserv-info.active
+		position: relative
+		opacity: 1
+		pointer-events: auto
+		z-index: 40
+		transition: $long
+		height: auto
+
+	.gallery .gallery-images
+		opacity: 0
+		padding-bottom: 16.5rem
+		transition: 0s
+		height: 0
+		overflow: hidden
+	.gallery-images.active
+		opacity: 1
+		transition: $long
+		height: auto
+
+	.conserv-loader
+		position: absolute
+		left: 0
+		right: 0
+		z-index: 45
+		text-align: center
+		padding-top: 3rem
+		opacity: 0
+		pointer-events: none
+
+	.conserv-loader.active
+		opacity: 1
+
+
+@media screen and (max-width: 1440px)
+	.page-conservation .conserv-menu li
+		font-size: 1.6rem
+		display: block
+		.anchor svg
+			width: 1.5rem
+	.page-conservation .main
+		padding-top: 6rem
+		padding-bottom: 12rem
+@media screen and (max-width: 1220px)
+	.page-conservation .conserv-menu li
+		margin-bottom: 1em
+	.page-conservation .main .row
+		max-width: 56rem
+	.page-conservation .conserv-menu
+		text-align: center
+		max-width: 48rem
+		margin: auto
+		li
+			display: inline-block
+	.page-conservation .main .col-md-4
+		padding-right: 1.5rem
+		width: 100%
+	.page-conservation .main .col-md-8
+		width: 100%
+		padding-top: 8rem
+
+	.page-conservation .main .logo
+		position: relative
+		left: auto
+		top: auto
+		margin-bottom: 4rem
+		text-align: center
+
+	.page-conservation .conserv-info.active
+		padding-left: 0
+
+	.page-conservation .main h2
+		margin-bottom: 1em
+
+@media screen and (max-width: 550px)
+	.page-conservation .conserv-menu
+		max-width: 23rem
+		li
+			font-size: 1.4rem

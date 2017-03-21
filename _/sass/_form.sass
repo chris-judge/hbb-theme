@@ -1,0 +1,269 @@
+.page-home .form
+	padding-top: 7rem
+	padding-bottom: 7rem
+	position: relative
+	overflow: hidden
+	.row
+		position: relative
+		z-index: 45
+	video
+		position: absolute
+		top: 50%
+		left: 50%
+		min-width: 100%
+		min-height: 100%
+		transform: translate(-50%,-50%)
+		z-index: 30
+	.content-wrap
+		max-width: 57rem
+		margin: auto
+	.form-wrap
+		padding-top: 5rem
+	input, textarea
+		width: 100%
+		padding: 1.8rem 2rem
+		text-align: center
+		color: $black
+		font-family: $neutra
+		text-transform: uppercase
+		appearance: none
+		line-height: 1.4rem
+		border: 0.2rem solid transparent
+		margin-bottom: 1.2rem
+		resize: none
+
+		&::-webkit-input-placeholder
+			color: $black
+		&::-moz-placeholder
+			color: $black
+		&:-ms-input-placeholder
+			color: $black
+		&:-moz-placeholder
+			color: $black
+
+		&:focus, &:hover
+			outline: 0
+
+		&:focus
+			&::-webkit-input-placeholder
+				color: transparent
+			&::-moz-placeholder
+				color: transparent
+			&:-ms-input-placeholder
+				color: transparent
+			&:-moz-placeholder
+				color: transparent
+	.gform_footer 
+		padding-top: 2rem
+		position: relative
+
+	input[type='submit']
+		font-size: 1.4rem
+		line-height: 1.2rem
+		padding: 1.3rem 1rem 1rem
+		margin-bottom: 0
+		background-color: transparent
+		font-weight: 600
+		border: 0.1rem solid white
+		border-radius: 0.6rem
+		max-width: 14.5rem
+		margin: auto
+		color: white
+		transition: $short
+		letter-spacing: 0.11em
+		&:hover, &:focus
+			background-color: white
+			color: $black
+			outline: 0
+	.gform_ajax_spinner
+		position: absolute
+		padding-left: 2.2rem
+	.gfield_error
+		input
+			border-color: $red
+
+	.gform_title, .gfield_label, .gform_validation_container, .gform_heading, .gfield_description, .validation_error
+		display: none
+
+
+
+
+.page-contact
+	.form-wrap
+		max-width: 92rem
+		margin: auto
+		font-family: $lato
+		font-size: 1.6rem
+		input, textarea, select
+			font-family: $lato
+
+	.gform_heading
+		display: none
+	.gform_fields
+		@extend %clearfix
+	.delivery-options
+		.gfield_label
+			display: none
+
+		label
+			vertical-align: top
+			cursor: pointer
+
+		input
+			vertical-align: top
+		
+		.gfield_checkbox
+			li
+				margin-bottom: 2.8rem
+	.delivery-options.for-sale, .delivery-options.service-parts 
+		margin-bottom: 5.5rem
+		display: flex
+		align-items: flex-start
+		justify-content: flex-start
+		flex-wrap: wrap
+		.ginput_container
+			flex: 0 0 100%
+			max-width: 100%
+			width: 100%
+			order: 2
+		.gfield_description
+			flex: 0 0 100%
+			max-width: 100%
+			width: 100%
+			order: 1
+			margin-bottom: 2.8rem
+	.delivery-options.for-sale
+		max-width: 39rem
+		margin: auto auto 5.5rem
+	.delivery-options.service-parts
+		max-width: 40rem
+		margin: auto 0 5.5rem auto
+	.brochure-type
+		margin-bottom: 5.5rem
+		@extend %clearfix
+		label
+			display: none
+		.ginput_container
+			display: inline-block
+			vertical-align: bottom
+			position: relative
+			height: 1.6rem
+			width: 17rem
+		.gfield_description
+			float: left
+			vertical-align: bottom
+
+		select
+			font-family: $lato
+			position: absolute
+			bottom:  -0.2rem
+			left: 0
+			right: 0
+			min-width: 16.5rem
+			appearance: none
+			margin-left: 1.5rem
+			border: 0
+			border-bottom: 0.2rem solid $dkgrey
+			font-weight: 600
+			padding: 1rem 1rem 1rem 0.2rem
+			border-radius: 0
+			background-color: transparent
+			&:focus
+				outline: 0
+	.opt-in
+		label
+			cursor: pointer
+	input[type=checkbox]
+		margin: 0 1rem 0 0
+		cursor: pointer
+
+	input[type="text"], textarea
+		border: 0
+		border-bottom: 0.2rem solid $dkgrey
+		appearance: none
+		padding: 0.5rem 0
+		width: 100%
+		&:focus
+			outline: 0
+	textarea
+		resize: none
+		height: 3.1rem
+		margin-bottom: 5.5rem
+	.gfield_label
+		font-family: $neutra
+		text-transform: uppercase
+		font-weight: 600
+		font-size: 1.4rem
+		letter-spacing: 0.11em
+
+
+	.left, .right
+		float: left
+		margin: auto
+		max-width: 50%
+		width: 100%
+		display: inline-block
+		margin-bottom: 5rem
+
+	.left
+		padding-right: 2.8rem
+	.right
+		padding-left: 2.8rem
+
+
+	.opt-in
+		.gfield_label
+			display: none
+
+
+	.gform_footer
+		padding-top: 5rem
+
+	input[type='submit']
+		font-size: 1.4rem
+		line-height: 1.2rem
+		padding: 1.3rem 1rem 1rem
+		margin-bottom: 0
+		background-color: transparent
+		font-weight: 600
+		border: 0.1rem solid $black
+		border-radius: 0.6rem
+		max-width: 14.5rem
+		margin: auto
+		color: $black
+		transition: $short
+		width: 100%
+		text-transform: uppercase
+		font-family: $neutra
+		letter-spacing: 0.11em
+		&:hover, &:focus
+			background-color: $black
+			color: white
+			outline: 0
+
+	.gform_ajax_spinner
+		position: absolute
+		padding-left: 2.2rem
+		stroke: $black
+	.gfield_error
+		input
+			border-color: $red
+		select
+			border-color: $red
+		label
+			font-weight: 600
+			color: $red
+
+	.validation_message, .validation_error
+		display: none
+
+
+
+.gform_confirmation_wrapper
+	text-align: center
+	height: 45rem
+	font-size: 2.4rem
+	font-family: neutra
+	text-transform: uppercase
+	font-weight: 600
+	line-height: 1.5em

@@ -1,0 +1,65 @@
+//
+// - Imports - //
+//
+@font-face
+	font-family: "Neutra"
+	src: url('../fonts/NeutraText-DemiSC.ttf')
+	src: url('../fonts/NeutraText-DemiSC.eot')
+	src: url('../fonts/NeutraText-DemiSC.woff')
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700')
+
+
+//
+// - Type - //
+//
+$neutra: "Neutra", sans-serif
+$lato: 'Lato', sans-serif
+
+
+//
+// - Colors - //
+//
+$black: #20231c
+$teal: #4dc1b4
+$gold: #f3eaa3
+$blue: #016eb4
+$offwhite: #f3f2ef
+$grey: #a3a3a2
+$dkgrey: #6e6f6a
+$red: red
+$green: green
+
+.txt-white
+	color: white
+.txt-black
+	color: $black
+.txt-teal
+	color: $teal
+.txt-gold
+	color: $gold
+.txt-blue
+	color: $blue
+.txt-grey
+	color: $grey
+
+.txt-shadow
+	text-shadow: 0 0 7.5px rgba(0,0,0,0.35)
+
+$x-short: all 0.3s cubic-bezier(0.19, 1, 0.22, 1)
+$short: all 0.5s cubic-bezier(0.19, 1, 0.22, 1)
+$long: all 1s cubic-bezier(0.19, 1, 0.22, 1)
+
+
+//
+// - Helpers - //
+//
+ 
+%clearfix // (to use, @extend %clearfix)
+	zoom: 1
+	&:before, &:after
+		content: ""
+		display: table 
+	&:after
+		clear: both

@@ -1,0 +1,95 @@
+.page-skiff-type
+	.intro
+		max-width: 145rem
+		margin: auto
+		padding-top: 22rem
+	.skiffs
+		max-width: 127rem
+		margin: auto
+		padding-bottom: 12rem
+	.skiff
+		padding-top: 12rem
+		padding-bottom: 12rem
+		height: 74rem
+		&:nth-of-type(even)
+			.images
+				float: right
+			.info .content-wrap
+				padding-left: 0
+				padding-right: 6.5rem
+
+	.info
+		height: 100%
+
+	.content-wrap
+		flex: 0 0 100%
+		max-width: 100%
+		width: 100%
+		padding-left: 6.5rem
+
+	h2
+		margin-bottom: 1rem
+
+	.specs
+		padding-top: 2.2rem
+		padding-bottom: 2.2rem
+
+	ul
+		column-count: 2
+		column-gap: 0.5rem
+	li
+		margin-bottom: 0.75em
+		line-height: 1.2em
+		display: inline-block
+		width: 100%
+
+
+
+@media screen and (max-width: 1600px)
+	.page-skiff-type .intro
+		padding-top: 12rem
+	.page-skiff-type .intro
+		padding-bottom: 6rem
+
+@media screen and (max-width: 1280px)
+	.page-skiff-type .content-wrap
+		padding-left: 3.5rem
+	.page-skiff-type .skiff:nth-of-type(even) .info .content-wrap
+		padding-right: 3.5rem
+
+@media screen and (max-width: 1024px)
+	.page-skiff-type .intro
+		hr
+			margin-bottom: 0
+	.page-skiff-type .skiffs
+		padding-bottom: 6rem
+	.page-skiff-type .skiff
+		padding-top: 0
+		padding-bottom: 0
+		height: auto
+		.images
+			width: 100%
+			height: 50vh
+		.info
+			width: 100%
+			padding-top: 6rem
+			padding-bottom: 6rem
+			.content-wrap
+				max-width: 80rem
+				margin: auto
+				padding-left: 0
+				padding-right: 0
+	.page-skiff-type .skiff:nth-of-type(even) .info .content-wrap
+		padding-left: 0
+		padding-right: 0
+@media screen and (max-width: 600px)
+	.page-skiff-type ul
+		column-count: 1
+
+@media screen and (max-width: 414px)
+	.page-skiff-type .intro
+		padding-top: 8rem
+	.page-skiff-type .skiffs
+		padding-bottom: 2rem	
+	.page-skiff-type .skiff .images
+		height: 40vh

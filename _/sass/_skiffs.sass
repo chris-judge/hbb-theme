@@ -1,0 +1,90 @@
+.page-skiffs
+	.bg
+		transition: $long
+		transform: scale(1)
+	h1
+		font-size: 4.3rem
+		color: white
+		position: relative
+		z-index: 35
+		padding: 0 3rem
+		text-align: center
+
+	.overlay
+		opacity: 0.02
+		background-color: $black
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		z-index: 30
+		transition: $long
+
+	.skiff
+		display: block
+		position: relative
+		overflow: hidden
+		&:hover
+			.bg
+				transform: scale(1.25)
+				transition: all 15s linear
+			.overlay
+				opacity: 0.55
+	.bg
+		display: flex
+		align-items: center
+		justify-content: center
+
+	.skiffs
+		padding: 4rem 3rem
+		li
+			display: inline-block
+			list-style-type: none
+			padding: 0 2.5rem
+		a
+			font-family: $neutra
+			text-transform: uppercase
+			font-weight: 600
+			letter-spacing: .12em
+
+
+
+@media screen and (max-width: 1600px)
+	.page-skiffs 
+		.skiffs
+			padding: 2.5rem 3rem
+
+		.hero.half
+			height: 58rem
+
+
+@media screen and (max-width: 1280px)
+	.page-skiffs 
+		.skiffs
+			padding: 2rem
+			a
+				font-size: 1.4rem
+		.hero.half
+			height: 49rem
+
+@media screen and (max-width: 1100px)
+	.page-skiffs .skiffs
+		padding: 0 0.5rem
+	.page-skiffs .skiffs li
+		padding: 2.5rem 1.5rem
+
+
+@media screen and (max-width: 920px)
+	.page-skiffs 
+		.skiffs
+			max-width: 45rem
+			margin: auto
+
+@media screen and (max-width: 414px)
+	.page-skiffs .skiffs li
+		padding: 2rem 1rem
+
+	.page-skiffs .hero.half
+		height: 48rem
+		max-height: 100vh

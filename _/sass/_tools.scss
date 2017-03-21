@@ -1,0 +1,98 @@
+// -------------------------------------
+//   Display
+// -------------------------------------
+
+.db {
+  display: block;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.dn {
+  display: none;
+}
+
+// -------------------------------------
+//   Margins
+// -------------------------------------
+
+// ----- Horizontal ----- //
+
+.mhc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// -------------------------------------
+//   Positioning
+// -------------------------------------
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.poa {
+  position: absolute;
+}
+
+.pof {
+  position: fixed;
+}
+
+.por {
+  position: relative;
+}
+
+.pos {
+  position: static;
+}
+
+
+// -------------------------------------
+//   Text
+// -------------------------------------
+
+// ----- Alignment ----- //
+
+.tac {
+  text-align: center;
+}
+.tar {
+  text-align: right;
+}
+.tal {
+  text-align: left;
+}
+
+
+// BG Image
+.bg.cover{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg.center{
+  background-position: center center;
+}
+.bg.top{
+  background-position: center top;
+}
+.bg.bot{
+  background-position: center bottom;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.flex.center{
+    align-items: center;
+    justify-content: center;
+}

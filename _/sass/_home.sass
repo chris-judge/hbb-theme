@@ -1,0 +1,433 @@
+.page-home
+	.intro
+		padding-top: 22rem
+		padding-bottom: 22rem
+
+		h2
+			font-weight: 600
+			span
+				display: block
+		.top
+			font-size: 4.3rem
+		.mid
+			padding: 1.2rem 0
+			font-size: 3.7rem
+		.bot
+			font-size: 3rem
+	.skiffs
+		background-color: $offwhite
+		padding: 8.5rem
+		max-width: 165rem
+		margin: auto
+		.top
+			position: relative
+			.arrows
+				z-index: 60
+				position: absolute
+				top: 50%
+				left: -5.2rem
+				right: -5.2rem
+				transform: translateY(-50%)
+				display: flex
+				align-items: center
+				justify-content: center
+				pointer-events: none
+				.next,.prev
+					font-size: 5rem
+					width: 100%
+					flex: 0 0 50%
+					max-width: 50%
+				.next
+					text-align: right
+				.prev
+					text-align: left
+				i
+					pointer-events: auto
+					color: $dkgrey
+					cursor: pointer
+					transition: $short
+					&:hover
+						color: $teal
+		.skiff
+			position: absolute
+			opacity: 0
+			transition: 0s
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			z-index: 35
+			pointer-events: none
+		.skiff.active
+			position: static
+			opacity: 1
+			z-index: 40
+			pointer-events: auto
+			transition: $long
+		.row
+			background-color: white
+			padding: 3rem
+			height: 56rem
+		.info
+			height: 100%
+			padding: 1rem 4rem 1rem 9.5rem
+			flex-wrap: wrap
+		.ce-wrap
+			padding-top: 1rem
+		.top-bar
+			li
+				text-transform: uppercase
+				font-family: $neutra
+				font-weight: 600
+				letter-spacing: 0.11em
+				font-size: 1.4rem
+				color: $dkgrey
+				cursor: pointer
+				display: inline-block
+				list-style-type: none
+				margin: auto 2rem auto 0
+				&:last-of-type
+					margin-right: 0
+			a
+				color: $dkgrey
+				&:hover
+					color: $teal
+			.current_parent
+				a
+					color: $black
+					&:hover
+						color: $teal
+			hr
+				height: 0.1rem
+				margin-top: 0.5rem
+				margin-bottom: 0
+		.top-bar, .content-wrap
+			flex: 0 0 100%
+			max-width: 100%
+			width: 100%
+		.content-wrap
+			padding-right: 4rem
+			a
+				margin-right: 1.5rem
+				&:last-of-type
+					margin-right: 0
+		.specs
+			padding-top: 2.2rem
+			padding-bottom: 2.2rem
+			ul
+				column-count: 2
+			li
+				margin-bottom: 0.25em
+				line-height: 1.2em
+				display: inline-block
+				width: 100%
+
+		.bottom
+			padding-top: 4rem
+			ul
+				text-align: center
+			li
+				text-transform: uppercase
+				font-family: $neutra
+				font-weight: 600
+				letter-spacing: 0.11em
+				font-size: 1.4rem
+				color: $dkgrey
+				cursor: pointer
+				display: inline-block
+				margin: auto
+				padding: 0 1.5rem
+				transition: $short
+				&:hover
+					color: $black
+			li.active
+				color: $black
+				pointer-events: none
+	.page-highlight
+		max-width: 145rem
+		margin: auto
+		padding-top: 22rem
+		padding-bottom: 22rem
+		.row
+			padding-top: 2rem
+			padding-bottom: 2rem
+
+	.instagram
+		padding-top: 22rem
+		padding-bottom: 20rem
+		.arrow-wrap
+			position: relative
+			max-width: 145rem
+			margin: auto
+		.arrows
+			z-index: 60
+			position: absolute
+			top: 50%
+			left: -5.2rem
+			right: -5.2rem
+			transform: translateY(-50%)
+			display: flex
+			align-items: center
+			justify-content: center
+			pointer-events: none
+			.next,.prev
+				font-size: 5rem
+				width: 100%
+				flex: 0 0 50%
+				max-width: 50%
+			.next
+				text-align: right
+			.prev
+				text-align: left
+			.off
+				pointer-events: none
+				opacity: 0.3
+				i
+					pointer-events: none
+					opacity: 0.3
+			i
+				pointer-events: auto
+				color: $dkgrey
+				cursor: pointer
+				transition: $short
+				&:hover
+					color: $teal
+
+		.row
+			max-width: 145rem
+			margin: auto
+			.col-md-12
+				padding: 0
+		.insta-feed
+			overflow: hidden
+			position: relative
+		.flex
+			align-items: flex-start
+			justify-content: flex-start
+			overflow: hidden
+			transform: none
+			transition: $long
+		.entry
+			flex: 0 0 36.25rem
+			width: 100%
+			max-width: 36.25rem
+			padding: 1rem
+			.inner-wrap
+				background-color: $offwhite
+			.bg
+				width: 100%
+				height: 28.5rem
+
+			.content
+				padding: 2rem
+				font-size: 1.4rem
+				min-height: 13.5rem
+				position: relative
+			.content-wrap
+				position: absolute
+				top: 2rem
+				left: 2rem
+				bottom: 2rem
+				right: 2rem
+			.bottom-wrap
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+
+			.bottom
+			hr
+				margin-top: 1.5rem
+				margin-bottom: 1rem
+			.date, .like-comment
+				flex: 0 0 50%
+				max-width: 50%
+				width: 100%
+
+			.like-comment
+				text-align: right
+				p
+					display: inline-block
+					margin-left: 1rem
+					&:nth-of-type(1)
+						margin-left: 0
+				.comments i
+					position: relative
+					top: -0.2rem
+
+
+
+@media screen and (max-width: 1650px)
+	.page-home .instagram .row
+		max-width: 109rem
+
+	.page-home .instagram .arrow-wrap
+		max-width: 109rem
+
+@media screen and (max-width: 1440px)
+	.page-home .skiffs .row
+		height: 53rem
+
+	.page-home .skiffs
+		padding: 4.5rem 6.5rem
+		margin-left: -3rem
+		margin-right: -3rem
+
+	.page-home .skiffs .top .arrows
+		left: -4.2rem
+		right: -4.2rem
+	
+	.page-home .skiffs .bottom
+		padding-top: 3rem
+
+	.page-home .skiffs .info
+		padding: 1rem 0rem 1rem 4.5rem
+
+
+@media screen and (max-width: 1280px)
+	.page-home .intro, 	.page-home .page-highlight, .page-home .instagram
+		padding-top: 12rem
+		padding-bottom: 12rem
+
+	.page-home .skiffs .row
+		height: 49rem
+		h2
+			font-size: 3.6rem
+
+@media screen and (max-width: 1260px)
+	.page-home .instagram .entry
+		flex: 0 0 33.25rem
+		max-width: 33.25rem
+
+	.page-home .instagram .arrow-wrap, .page-home .instagram .row
+		max-width: 100rem
+
+	.page-home .instagram .arrows
+		left: -3.9rem
+		right: -3.9rem
+
+@media screen and (max-width: 1220px)
+	.page-home .skiffs .row
+		.images
+			width: calc(100%/2.5)
+		.info
+			width: calc(120%/2)
+
+@media screen and (max-width: 1120px)
+	.page-home .instagram .arrows
+		display: none
+	.page-home .instagram .flex
+		flex-wrap: wrap
+	.page-home .instagram .entry
+		flex: 0 0 calc(100%/3)
+		max-width: calc(100%/3)
+@media screen and (max-width: 1024px)
+	.page-home .skiffs
+		margin-left: 0
+		margin-right: 0
+		padding: 3.5rem 2.5rem 2.5rem
+	.page-home .skiffs .bottom
+		padding-top: 3rem
+
+	.page-home .skiffs .top .arrows
+		display: none
+	
+	.page-home .skiffs .specs
+		display: none
+	.page-home .skiffs .ce-wrap
+		padding-bottom: 2.2rem
+
+	.page-home .skiffs .row
+		padding: 2.5rem
+
+@media screen and (max-width: 990px)
+	.page-home .skiffs .bottom
+		display: none
+	.page-home .skiffs
+		padding: 2.5rem
+	.page-home .skiffs .row
+		height: auto
+		padding: 0
+	.page-home .skiffs .row .info, .page-home .skiffs .row .images
+		width: 100%
+	.page-home .skiffs .row .images
+		height: 50vh
+		margin-bottom: 2rem
+	.page-home .skiffs .info
+		padding: 2.5rem 5rem
+		display: block
+
+	.page-home .skiffs .content-wrap
+		padding: 3rem 0 2rem
+	.page-home .instagram .entry
+		max-width: 50%
+		flex: 0 0 50%
+@media screen and (max-width: 750px)
+	.page-home .intro h2
+		line-height: 1em
+	.page-home .intro .top
+		font-size: 3.4rem
+		line-height: 1em
+	.page-home .intro .mid
+		padding: 1rem 0
+		font-size: 2.8rem
+		line-height: 1em
+	.page-home .intro .bot
+		font-size: 2.2rem
+		line-height: 1em
+@media screen and (max-width: 675px)
+	.page-home .instagram .entry
+		flex: 0 0 100%
+		max-width: 100%
+		padding-left: 0
+		padding-right: 0
+@media screen and (max-width: 550px)
+	.page-home .skiffs .row .images
+		height: 33.3333vh
+	.page-home .skiffs
+		padding: 2rem
+		.info
+			padding: 2.5rem
+		.top-bar
+			display: none
+	.page-home .skiffs .row .images
+		margin-bottom: 0
+	.page-home .skiffs .content-wrap
+		padding: 1rem 0
+
+@media screen and (max-width: 420px)
+	.page-home .intro .content-wrap
+		max-width: 33rem
+		margin: auto
+	.page-home .form input, .page-home .form textarea
+		padding: 1rem 1.5rem
+
+	.page-home .intro, 	.page-home .page-highlight, .page-home .instagram
+		padding-top: 8rem
+		padding-bottom: 8rem
+
+@media screen and (max-width: 414px)
+	.page-home .skiffs .content-wrap a
+		margin-right: 0
+		margin-bottom: 2rem
+		&:last-of-type
+			margin-bottom: 0
+
+	.page-home .instagram
+		.row:nth-of-type(2)
+			padding-left: 2rem
+			padding-right: 2rem
+
+@media screen and (max-width: 350px)
+	.page-home .intro .content-wrap
+		max-width: 28rem
+	.page-home .intro .top
+		font-size: 3rem
+		line-height: 1.1em
+	.page-home .intro .mid
+		padding: 1.5rem 0
+		font-size: 2.4rem
+		line-height: 1.1em
+	.page-home .intro .bot
+		font-size: 1.8rem
+		line-height: 1.1em

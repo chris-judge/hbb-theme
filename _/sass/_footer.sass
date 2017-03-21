@@ -1,0 +1,112 @@
+footer
+	font-weight: 400
+	hr
+		margin-top: 1rem
+		margin-bottom: 1.5rem
+	.content-wrap
+		padding-left: 9%
+		padding-right: 9%
+		margin: auto
+	.contact-info
+		h3
+			font-size: 2rem
+			margin-bottom: 0.8em
+		p
+			font-size: 1.8rem
+			margin-bottom: 0.5rem
+			&:last-of-type
+				margin-bottom: 0
+	.logo-footer
+		display: inline-block
+		margin: auto
+		opacity: 1
+		&:hover
+			opacity: 0.54
+	.social-wrap
+		max-width: 27.5rem
+		margin: auto 0 auto auto
+		a
+			margin-left: 1.3rem
+			margin-right: 1.3rem
+			font-size: 3rem
+			color: $dkgrey
+			&:hover, &:focus
+				color: $teal
+	.big
+		a
+			position: relative
+			top: -0.2rem
+		a:hover
+			svg
+				fill: $teal
+		svg
+			width: 6rem
+			height: 1.688rem
+			position: relative
+			top: 0.3rem
+			fill: $grey
+			transition: $short
+	.row:nth-of-type(odd)
+		padding-top: 7rem
+		padding-bottom: 7rem
+		background-color: $offwhite
+	.row:nth-of-type(even)
+		padding-top: 2.5rem
+		padding-bottom: 2.5rem
+		background-color: $black
+		color: $grey
+
+@media screen and (max-width: 1220px)
+	footer .content-wrap
+		.col-md-4
+			width: 50%
+		.col-md-4:nth-of-type(2)
+			display: none
+		.col-md-6
+			width: 100%
+			text-align: center
+			padding-top: 0.8rem
+			padding-bottom: 0.8rem
+
+	footer .row:nth-of-type(even)
+		padding-top: 1.5rem
+		padding-bottom: 1.5rem
+
+
+@media screen and (max-width: 990px)
+	footer .content-wrap .col-md-4
+		width: 100%
+		&:nth-of-type(1)
+			margin-bottom: 5rem
+
+	footer .row:nth-of-type(odd)
+		padding-top: 5rem
+		padding-bottom: 5rem
+
+	footer .content-wrap .col-md-4
+		.contact-info, .social-wrap
+			max-width: 30.5rem
+			margin: auto
+
+@media screen and (max-width: 625px)
+	footer .content-wrap .col-md-6.big
+		padding-top: 0
+	footer .content-wrap .col-md-6
+		margin: auto
+		.divider
+			display: none
+		a
+			padding-top: 0.8rem
+			display: block
+
+
+@media screen and (max-width: 400px)
+	footer .contact-info h3
+		font-size: 1.8rem
+
+	footer .content-wrap .col-md-4 .contact-info, footer .content-wrap .col-md-4 .social-wrap
+		max-width: 100%
+
+	footer .content-wrap
+		padding-left: 0
+		padding-right: 0

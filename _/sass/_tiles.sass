@@ -1,0 +1,61 @@
+.tile
+	height: 49rem
+
+	a
+		padding-bottom: 1.2rem
+		display: block
+		height: 100%
+		overflow: hidden
+		transition: $short
+		&:hover, &:focus
+			color: white
+			padding-bottom: 5.2rem
+			.content-wrap
+				bottom: -0.3rem
+			hr
+				opacity: 0
+
+
+	h4
+		font-weight: 600
+		font-size: 2.6rem
+
+	hr
+		margin-top: 1rem
+		margin-bottom: 0
+		opacity: 1
+		transition: $short
+
+	.bg
+		padding: 3rem 2.8rem
+		height: 100%
+		position: relative
+		transition: $short
+		transform: none
+		position: relative
+		z-index: 30
+
+	.content-wrap
+		position: absolute
+		bottom: 3rem
+		left: 2.8rem
+		right: 2.8rem
+		z-index: 35
+		transition: $short
+
+.tile:nth-of-type(4n+1)
+	a
+		background-color: $teal
+.tile:nth-of-type(4n+2)
+	a
+		background-color: $gold
+.tile:nth-of-type(4n+3)
+	a
+		background-color: $blue
+
+
+@media screen and (max-width: 990px)
+	.tile
+		height: 36rem
+		margin-bottom: 2rem
+	

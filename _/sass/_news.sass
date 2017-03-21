@@ -1,0 +1,105 @@
+.page-single-news
+	padding-top: 12rem
+	padding-bottom: 12rem
+	.intro
+		margin-bottom: 5.5rem
+		h1
+			margin-bottom: 2.5rem
+		p
+			margin-bottom: 0
+
+	.social-share
+		padding-top: 2rem
+		a
+			margin-right: 1.4rem
+			&:last-of-type
+				margin-right: 0
+
+	.a2a_svg
+		background-color: white !important
+		border: 0.1rem solid $black !important
+		border-radius: 50% !important
+		position: relative
+		width: 3.5rem
+		height: 3.5rem
+		opacity: 1 !important
+		transition: $short !important
+		&:hover
+			background-color: $black !important
+			opacity: 1 !important
+			svg path
+				fill: white
+		svg 
+			position: absolute
+			left: 0
+			right: 0
+			top: 50%
+			transform: translateY(-50%) scale(0.725)
+			path
+				fill: $black
+				transition: $short !important
+
+	.post-nav
+		padding-top: 8rem
+		a
+			font-weight: 600
+			font-family: $neutra
+			text-transform: uppercase
+			font-size: 1.4rem
+			i
+				font-size: 2rem
+				position: relative
+				bottom: -0.2rem
+		.col-md-6:nth-of-type(1)
+			i
+				margin-right: 0.5rem
+		.col-md-6:nth-of-type(2)
+			i
+				margin-left: 0.5rem
+.page-single-event
+	.col-md-6
+		&:nth-of-type(odd)
+			padding-right: 2rem
+		&:nth-of-type(even)
+			padding-left: 2rem
+	.row
+		max-width: 120rem
+		margin: auto
+	img
+		max-width: 100%
+		height: auto
+
+	.row.post-nav
+		max-width: 120rem
+		padding-top: 8rem
+
+
+
+@media screen and (max-width: 1280px)
+	.page-single-event .row
+		max-width: 95rem
+
+
+@media screen and (max-width: 990px)
+	.page-single-event .col-md-6:nth-of-type(odd)
+		padding-right: 1.5rem
+	.page-single-event .row
+		max-width: 60rem
+		.col-md-6
+			text-align: center
+			margin-bottom: 4rem
+			.intro, .main
+				text-align: left
+			&:last-of-type
+				margin-bottom: 0
+
+	.page-single-news .row.post-nav, .page-single-event .row.post-nav
+		display: flex
+		max-width: 60rem
+		.col-md-6
+			flex: 0 0 50%
+			max-width: 50%
+			width: 100%
+			text-align: left
+		.col-md-6:nth-of-type(2)
+			text-align: right

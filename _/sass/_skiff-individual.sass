@@ -1,0 +1,293 @@
+.page-skiff-individual
+	.intro
+		padding-top: 22rem
+		padding-bottom: 22rem
+		h1
+			padding-top: 3rem
+			padding-bottom: 3rem
+		.content-wrap
+			max-width: 61rem
+			margin: auto
+		img
+			max-width: 100%
+			height: auto
+
+	.features-specs
+		padding-top: 16.5rem
+		padding-bottom: 16.5rem
+		.row.inner
+			max-width: 91rem
+			margin: auto
+		.row.spec
+			padding-top: 10rem
+		.title
+			padding-right: 7rem
+			p
+				margin-bottom: 1.5em
+				font-size: 1.8rem
+				text-transform: uppercase
+				color: $grey
+				cursor: pointer
+				transition: $short
+				font-weight: 600
+				font-family: $neutra
+				letter-spacing: 0.11em
+				position: relative
+				&:hover, &:focus
+					color: $teal
+
+			p.active
+				color: $black
+				pointer-events: none
+				.anchor
+					opacity: 1
+
+			.anchor
+				position: absolute
+				left: calc(100% + 1rem)
+				top: 50%
+				z-index: 70
+				display: block
+				transform: translateY(-50%)
+				opacity: 0
+				transition: $short
+				svg
+					width: 2rem
+					height: auto
+					polygon, path
+						fill: $black
+		.description
+			padding-left: 1rem
+			position: relative
+			.ce-wrap
+				position: absolute
+				top: 0
+				left: 1rem
+				right: 0
+				bottom: 0
+				opacity: 0
+				z-index: 30
+				background-color: white
+			.ce-wrap.active
+				position: relative
+				left: 0
+				z-index: 35
+				opacity: 1
+				transition: $short
+
+.video
+	position: relative
+	.play-btn
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		height: 8rem
+		flex: 0 0 8rem
+		display: inline-block
+		margin: auto
+		width: 8rem
+		max-width: 8rem
+		cursor: pointer
+		svg
+			width: 8rem
+			height: 8rem
+		&:hover
+			.color
+				fill: $black
+	.color
+		transition: $short
+
+.colors
+	padding: 10rem 0 2.5rem
+	margin: auto
+	flex-wrap: wrap
+	.color-block-outer
+		flex: 0 0 calc(100%/4)
+		max-width: calc(100%/4)
+		width: calc(100%/4)
+		padding: 0 2rem
+		margin-bottom: 7.5rem
+	.color-block-inner
+	.top
+		height: 4.5rem
+		width: 100%
+		border: 0.1rem solid #c5c5c5
+	.bot
+		padding: 1.1rem 0.5rem
+		font-family: $neutra
+		text-transform: uppercase
+		font-size: 1.2rem
+		font-weight: 600
+		border-left: 0.1rem solid #c5c5c5
+		border-right: 0.1rem solid #c5c5c5
+		border-bottom: 0.1rem solid #c5c5c5
+
+
+
+.gallery
+	.row
+		max-width: 145rem
+		margin: auto
+
+	.gallery-images
+		padding-top: 3.6rem
+		padding-bottom: 3.6rem
+		flex-wrap: wrap
+
+	.gallery-image-outer
+		flex: 0 0 calc(100%/3)
+		max-width: calc(100%/3)
+		width: calc(100%/3)
+		padding: 2.8rem
+
+	.gallery-background
+		position: relative
+		height: 41.5rem
+
+	.gallery-image-inner
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 1.3rem
+
+	.gallery-image-outer:nth-of-type(6n+1)
+		.gallery-background
+			background-color: $teal
+	.gallery-image-outer:nth-of-type(6n+2)
+		.gallery-background
+			background-color: $gold
+	.gallery-image-outer:nth-of-type(6n+3)
+		.gallery-background
+			background-color: $blue
+	.gallery-image-outer:nth-of-type(6n+4)
+		.gallery-background
+			background-color: $blue
+	.gallery-image-outer:nth-of-type(6n+5)
+		.gallery-background
+			background-color: $teal
+	.gallery-image-outer:nth-of-type(6n+6)
+		.gallery-background
+			background-color: $gold
+
+
+.other-skiffs-nav
+	padding-top: 12rem
+	padding-bottom: 16.5rem
+	.row.skiff-types
+		margin-bottom: 0.5rem
+	.row.skiffs
+		a
+			font-size: 1.2rem
+	li
+		list-style-type: none
+		display: inline-block
+		margin: auto 1rem 1.5rem
+	a
+		font-size: 1.4rem
+		letter-spacing: 0.12em
+		font-weight: 600
+		font-family: $neutra
+		color: $grey
+		text-transform: uppercase
+		&:hover, &:focus
+			color: $teal
+
+	.current_page_parent a
+		color: $black
+		&:hover
+			color: $teal
+
+	.current_page_item a
+		color: $black
+		pointer-events: none
+
+
+
+@media screen and (max-width: 1280px)
+	.page-skiff-individual .intro
+		padding-top: 12rem
+		padding-bottom: 12rem
+
+	.colors
+		padding: 6.5rem 0 2.5rem
+
+	.colors .color-block-outer
+		margin-bottom: 5rem
+
+	.gallery .gallery-background
+		height: 28.5rem
+
+	.gallery .gallery-image-outer
+		padding: 1.4rem
+
+
+@media screen and (max-width: 990px)
+	.page-skiff-individual .features-specs .row.spec
+		padding-top: 5rem
+	.page-skiff-individual .features-specs .title
+		text-align: center
+		padding-right: 0
+		.anchor
+			position: relative
+			left: 1rem
+			display: inline
+			svg
+				width: 1.5rem
+		p
+			margin-bottom: 0.75em
+	.page-skiff-individual .features-specs .description
+		padding-left: 0
+		padding-top: 2rem
+		.ce-wrap
+			max-width: 48rem
+			margin: auto
+	.gallery .gallery-image-outer
+		flex: 0 0 calc(100%/2)
+		max-width: calc(100%/2)
+		width: 100%
+@media screen and (max-width: 920px)
+	.colors .color-block-outer
+		flex: 0 0 calc(100%/3)
+		max-width: calc(100%/3)
+		width: 100%
+		padding: 0 1rem
+		margin-bottom: 2rem
+
+@media screen and (max-width: 750px)
+	.gallery .gallery-image-outer
+		flex: 0 0 100%
+		max-width: 100%
+		padding-left: 0
+		padding-right: 0
+
+@media screen and (max-width: 640px)
+	.colors .color-block-outer
+		flex: 0 0 calc(100%/2)
+		max-width: calc(100%/2)
+	.gallery
+		.col-md-12
+			padding-left: 0
+			padding-right: 0
+	.page-skiff-individual .features-specs
+		padding-top: 12rem
+		padding-bottom: 12rem
+
+	.other-skiffs-nav
+		padding-top: 6rem
+		padding-bottom: 12rem
+
+@media screen and (max-width: 430px)
+	.colors .color-block-outer
+		padding: 0 0.5rem
+	.page-skiff-individual .features-specs .row.inner
+		margin-left: -1.5rem
+		margin-right: -1.5rem
+
+@media screen and (max-width: 414px)
+	.page-skiff-individual .features-specs .title p
+		font-size: 1.4rem
+	.page-skiff-individual .features-specs .title .anchor svg
+		width: 1.25rem

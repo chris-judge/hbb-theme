@@ -1,0 +1,37 @@
+.images
+	height: 100%
+	position: relative
+	.image
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 30
+		opacity: 0
+		transition: $short
+	.image.active
+		opacity: 1
+		z-index: 35
+	.dots
+		position: absolute
+		bottom: 2.5rem
+		left: 2.5rem
+		z-index: 45
+	.dot
+		display: inline-block
+		margin: 0
+		color: white
+		cursor: pointer
+		transition: $short
+		margin-right: 1.25rem
+		font-size: 1.3rem
+		&:hover, &:focus
+			color: $teal
+	.dot.active
+		color: $teal
+		pointer-events: none
+
+@media screen and (max-width: 600px)
+	.images .dots
+		display: none

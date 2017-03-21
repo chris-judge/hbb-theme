@@ -1,0 +1,93 @@
+.hero.txt
+	padding-top: 12.5rem
+	h1
+		margin-bottom: 4rem
+	a
+		font-size: 2.4rem
+		font-weight: 600
+		display: inline-block
+	p:nth-of-type(1)
+		margin-bottom: 1.2rem
+.hero.video
+	position: relative
+	overflow: hidden
+	video
+		position: absolute
+		min-width: 100%
+		min-height: 100%
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		z-index: 30
+	.content-wrap
+		z-index: 45
+		position: relative	
+.hero.full
+	height: calc(100vh - 15.5rem)
+.hero.half
+	height: 78rem
+.hero.title
+	display: flex
+	align-items: center
+	justify-content: center
+	.content-wrap
+		flex: 0 0 100%
+		max-width: 46.5rem
+		width: 100%
+		padding: 0 1.5rem
+	.skip
+		padding-top: 4rem
+		font-family: $neutra
+		font-size: 1.8rem
+		text-transform: uppercase
+		font-weight: 600
+		max-width: 8.5rem
+		margin: auto
+		letter-spacing: 0.2em
+		line-height: 1.22em
+		cursor: pointer
+		transition: $short
+		span
+			display: block
+			font-size: 3rem
+		i
+			line-height: 3rem
+		&:hover
+			color: $teal
+
+
+@media screen and (max-width: 1600px)
+	.hero.half
+		height: 65rem
+	.hero.title .skip
+		padding-top: 2.5rem
+
+@media screen and (max-width: 1480px)
+	.hero.full
+		height: calc(100vh - 11.5rem)
+
+@media screen and (max-width: 1280px)
+	.hero.half
+		height: 55rem
+
+@media screen and (max-width: 1024px)
+	.hero.full
+		height: calc(100vh - 7.5rem)
+	.hero.half
+		height: 66vh
+		max-height: 42rem
+	.hero.txt a
+		font-size: 2rem
+
+	.hero.txt h1
+		margin-bottom: 3rem
+@media screen and (max-width: 600px)
+	.hero.title .skip
+		padding-top: 1.5rem
+		font-size: 1.6rem
+@media screen and (max-width: 414px)
+	.hero.half
+		height: calc(100vh - 7rem)
+		max-height: none
+	.hero.images
+		height: 40vh

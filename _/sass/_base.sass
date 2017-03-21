@@ -1,0 +1,119 @@
+//
+//- Base Values -//
+//
+html
+	font-size: 62.5%
+
+body
+	padding-top: 15.5rem
+	font-family: $lato
+	letter-spacing: 0.02em
+	color: $black
+	font-size: 1.6rem
+	font-weight: 300
+	background-color: white
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+a
+	text-decoration: none
+	transition: $short
+	color: inherit
+	&:hover
+		text-decoration: none
+		color: $teal
+	&:focus
+		text-decoration: none
+		color: inherit
+
+b,strong
+	font-weight: 600
+
+body.lock, html.lock
+	overflow: hidden
+	position: relative
+
+body.unlock, html.unlock
+	overflow: visible
+	position: static
+
+.ce-wrap
+	a
+		font-weight: 600
+		color: $blue
+		&:hover
+			color: $teal
+	img
+		padding-bottom: 2rem
+		max-width: 100%
+		height: auto
+	p.lg
+		font-size: 2rem
+		font-weight: 500
+	p
+		margin-bottom: 1.5em
+		line-height: 1.5em
+		&:last-of-type
+			margin-bottom: 0
+	ul
+		list-style-type: disc
+		list-style-position: outside
+		padding-left: 2.5rem
+		margin-bottom: 1.5em
+		margin-top: -1rem
+	li
+		margin-bottom: 0.75em
+		line-height: 1.5em
+		&:last-of-type
+			margin-bottom: 0
+
+hr
+	display: block
+	height: 0.1rem
+	background-color: $grey
+	border: none
+	max-width: 100%
+
+hr.white
+	background-color: white
+hr.black
+	background-color: $black
+
+hr.sm
+	height: 0.2rem
+hr.xsm
+	height: 0.1rem
+
+.pad-wrap
+	padding: 0 8.5rem
+
+.row.sm--row
+	max-width: 68rem
+	margin: auto
+
+.loader.invert
+	svg
+		stroke: $black
+.loader.lg
+	svg
+		width: 4.5rem
+		height: 4.5rem
+
+
+@media screen and (max-width: 1440px)
+	.pad-wrap
+		padding: 0 4rem
+
+@media screen and (max-width: 1280px)
+	.pad-wrap
+		padding: 0 3rem
+
+@media screen and (max-width: 1024px)
+	.pad-wrap
+		padding: 0
+
+
+@media screen and (max-width: 600px)
+	.ce-wrap
+		p.lg
+			font-size: 1.6rem
