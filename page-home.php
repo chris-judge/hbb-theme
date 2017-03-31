@@ -188,8 +188,7 @@
 							<div class="content-wrap txt-white tac">
 								<h3><?php the_sub_field('headline'); ?></h3>
 								<div class="form-wrap">
-									<?php $form = get_sub_field('form_select'); ?>
-									<?php gravity_form($form->id, true, true, false, '', true, 1); ?>
+									<iframe src="http://hellsbayboatworks.force.com/ContactGeneral" width='100%' height="675px" scrolling="no"></iframe>
 								</div>
 							</div>
 						</div>

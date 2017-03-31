@@ -49,13 +49,11 @@
 					<div class="row tac">
 						<div class="col-md-12">
 							<h2 class="alt"><?php the_sub_field('headline'); ?></h2>
-							<?php if( have_rows('forms') ): ?>
-								<div class="form-swap">
-								<?php while( have_rows('forms') ): the_row(); ?>
-									<div class="form-select" data-title="<?=get_sub_field('form')->title;?>"><span class="check">X</span><?=get_sub_field('form')->title;?></div>
-								<?php endwhile; ?>
-								</div>
-							<?php endif; ?>	
+							<div class="form-swap">
+								<div class="form-select" data-title="Brochure"><span class="check">X</span>Brochure</div>
+								<div class="form-select" data-title="For Sales"><span class="check">X</span>For Sales</div>
+								<div class="form-select" data-title="For Service & Parts"><span class="check">X</span>For Service &amp; Parts</div>
+							</div>
 						</div>
 						<div class="col-md-12 loader-holder">
 							<div class="loader lg invert">
@@ -63,26 +61,33 @@
 							</div>
 						</div>
 					</div>
-					<?php if( have_rows('forms') ): ?>
-					<?php $tab_fix = 1; ?>
-					<?php while( have_rows('forms') ): the_row(); ?>
-						<div class="row form-rows" data-title="<?=get_sub_field('form')->title;?>">
-							<div class="col-md-12">
-								<div class="form-wrap">
-									<?php gravity_form_enqueue_scripts(get_sub_field('form')->id, true);  ?>
-									<?php gravity_form(get_sub_field('form')->id, true, true, false, '', true, $tab_fix);  ?> 
-								</div>
+					<div class="row form-rows" data-title="Brochure">
+						<div class="col-md-12">
+							<div class="form-wrap">
+								<?php /*
+									<iframe src="http://hellsbayboatworks.force.com/ContactBrochure" width='100%' height="720"></iframe>
+								*/ ?>
+								<iframe src="http://hellsbayboatworks.force.com/ContactBrochure" width='100%' height="1175" scrolling="no"></iframe>
 							</div>
 						</div>
-					<?php $tab_fix+=20; ?>
-					<?php endwhile; ?>
-					<?php endif; ?>	
+					</div>
+					<div class="row form-rows" data-title="For Sales">
+						<div class="col-md-12">
+							<div class="form-wrap">
+								<iframe src="http://hellsbayboatworks.force.com/ContactSales" width='100%' height="675" scrolling="no"></iframe>
+							</div>
+						</div>
+					</div>
+					<div class="row form-rows" data-title="For Service & Parts">
+						<div class="col-md-12">
+							<div class="form-wrap">
+								<iframe src="http://hellsbayboatworks.force.com/ContactPartsandServices" width='100%' height="675" scrolling="no"></iframe>
+							</div>
+						</div>
+					</div>
 				</section>
 			<?php endwhile; ?>
 			<?php endif; ?>	
-			<h1>Salesforce Form</h1>
-			<?php include('salesforce-form.php'); ?>
-			<hr>
 		</div>
 	<?php endwhile; ?>
 	<?php endif; ?>	
