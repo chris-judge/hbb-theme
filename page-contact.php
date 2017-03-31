@@ -67,21 +67,21 @@
 								<?php /*
 									<iframe src="http://hellsbayboatworks.force.com/ContactBrochure" width='100%' height="720"></iframe>
 								*/ ?>
-								<iframe src="http://hellsbayboatworks.force.com/ContactBrochure" width='100%' height="1175" scrolling="no"></iframe>
+								<iframe src="http://hellsbayboatworks.force.com/ContactBrochure" width='100%' height="1275" scrolling="no"></iframe>
 							</div>
 						</div>
 					</div>
 					<div class="row form-rows" data-title="For Sales">
 						<div class="col-md-12">
 							<div class="form-wrap">
-								<iframe src="http://hellsbayboatworks.force.com/ContactSales" width='100%' height="675" scrolling="no"></iframe>
+								<iframe src="http://hellsbayboatworks.force.com/ContactSales" width='100%' height="775" scrolling="no"></iframe>
 							</div>
 						</div>
 					</div>
 					<div class="row form-rows" data-title="For Service & Parts">
 						<div class="col-md-12">
 							<div class="form-wrap">
-								<iframe src="http://hellsbayboatworks.force.com/ContactPartsandServices" width='100%' height="675" scrolling="no"></iframe>
+								<iframe src="http://hellsbayboatworks.force.com/ContactPartsandServices" width='100%' height="775" scrolling="no"></iframe>
 							</div>
 						</div>
 					</div>
